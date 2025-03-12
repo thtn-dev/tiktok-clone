@@ -144,3 +144,18 @@
     @apply bg-background text-foreground;
   }
 }
+body {
+  @apply bg-background text-foreground;
+}
+
+/* Hide scrollbar but keep functionality */
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
